@@ -1,4 +1,5 @@
 PODS:
+  - MyLayout (1.4.2)
   - ReactiveCocoa (6.0.1):
     - ReactiveSwift (~> 2.0)
   - ReactiveSwift (2.0.1):
@@ -6,13 +7,15 @@ PODS:
   - Result (3.2.3)
 
 DEPENDENCIES:
+  - MyLayout (~> 1.4.2)
   - ReactiveCocoa (~> 6.0)
 
 SPEC CHECKSUMS:
+  MyLayout: 90df5544cdadb00a52873cb9a95c04d7083a81c1
   ReactiveCocoa: cf6595131c832c468fe3f84a2d7f74ed68eb3058
   ReactiveSwift: 60a29ff35988a964fd2bb759755cb6594de523fc
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
 
-PODFILE CHECKSUM: 8bc8501778217acee2ef735b0091b717e8e7081f
+PODFILE CHECKSUM: 7ca37ff46f481426b1ea95bf4c474d3170f3975e
 
 COCOAPODS: 1.3.1
