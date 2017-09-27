@@ -9,23 +9,14 @@
 #import "ASBasicUIViewController.h"
 #import <MyLayout/MyLayout.h>
 #import "BBSBasicUIView.h"
+#import "BBSBasicEditView.h"
 
 @interface ASBasicUIViewController ()
 
-@property (nonatomic, strong) MyRelativeLayout *layout;
-
+@property (nonatomic, strong) MyLinearLayout *contentLayout;
 @property (nonatomic, strong) BBSBasicUIView *showView;
+@property (nonatomic, strong) BBSBasicEditView *editView;
 
-@property (nonatomic, strong) UITextField *headerText;
-@property (nonatomic, strong) UITextField *contentText;
-
-@property (nonatomic, strong) UITextField *headerColorTextField;
-@property (nonatomic, strong) UITextField *contentColorTextField;
-
-@property (nonatomic, strong) UITextField *headerFontSizeTextField;
-@property (nonatomic, strong) UITextField *contentFontSizeTextField;
-
-@property (nonatomic, strong) UIButton *updateLabel;
 
 @end
 
@@ -34,22 +25,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-
+    [self setupView];
 }
 
 - (void)setupView {
-    _layout = [[MyRelativeLayout alloc] init];
-    _layout.backgroundColor = [UIColor redColor];
-    _layout.myTop =
-    _layout.myTop = _layout.myLeft = _layout.myRight = 0;
-    _layout.myHeight = 400.f;
-    [self.view addSubview:_layout];
+    _contentLayout = [[MyLinearLayout alloc] initWithOrientation:MyOrientation_Vert];
+    _contentLayout.myMargin = 0;
+    [self.view addSubview:_contentLayout];
     
     _showView = [[BBSBasicUIView alloc] init];
-    _showView.centerXPos.equalTo(_layout.centerXPos);
-    _showView.centerYPos.equalTo(_layout.centerYPos);
+    _showView.backgroundColor = [UIColor redColor];
+    _showView.myLeft = _showView.myRight = _showView.myTop = 0;
+    _showView.myHeight = 400.f;
+    [_contentLayout addSubview:_showView];
     
-    
+    _editView = [[BBSBasicEditView alloc] init];
+    _editView.myMargin = 30.f;
+    [_contentLayout addSubview:_editView];
 }
 
 @end

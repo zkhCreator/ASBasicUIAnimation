@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MyLayout/MyLayout.h>
 
-@interface BBSBasicUIView : UIView
+@interface BBSBasicUIView : MyRelativeLayout
 
-@property (nonatomic, strong) UIView *content
+@property (nonatomic, strong) UIView *content;
 @property (nonatomic, strong) UILabel *headerTextLabel;
-@property (nonatomic, strong) UILabel *contentTtextLabel;
+@property (nonatomic, strong) UILabel *contentTextLabel;
 
 @end
