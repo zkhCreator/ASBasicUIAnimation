@@ -10,13 +10,15 @@
 #import <MyLayout/MyLayout.h>
 #import "ASBasicUIView.h"
 #import "ASBasicEditView.h"
+#import "ASUIViewDemoViewModel.h"
+#import <ReactiveObjC/ReactiveObjC.h>
 
 @interface ASBasicUIViewController ()
 
 @property (nonatomic, strong) MyLinearLayout *contentLayout;
 @property (nonatomic, strong) ASBasicUIView *showView;
 @property (nonatomic, strong) ASBasicEditView *editView;
-
+@property (nonatomic, strong) ASUIViewDemoViewModel *dataViewModel;
 
 @end
 
@@ -42,6 +44,11 @@
     _editView = [[ASBasicEditView alloc] init];
     _editView.myMargin = 30.f;
     [_contentLayout addSubview:_editView];
+    
+}
+
+- (void)conbineVM {
+    
 }
 
 @end

@@ -16,5 +16,8 @@
 @property (nonatomic, strong) UIColor *contentBackgroundColor;
 @property (nonatomic, assign) CGFloat lineHeight;
 @property (nonatomic, assign) CGFloat fontSize;
+@property (nonatomic, assign) CGFloat maxWidth;
+
+-(NSAttributedString *)getCurrentNSAttributeString;
 
 @end
