@@ -49,7 +49,7 @@
     [self addSubview:_contentText];
 
     _headerColorTextField.myLeft = 0;
-    _headerColorTextField.topPos.equalTo(_headerText.bottomPos).offset(40.f);
+    _headerColorTextField.topPos.equalTo(_headerText.bottomPos).offset(12.f);
     _headerColorTextField.myWidth = 100.f;
     [self addSubview:_headerColorTextField];
 
@@ -58,7 +58,7 @@
     _contentColorTextField.myRight = 0;
     [self addSubview:_contentColorTextField];
 
-    _headerFontSizeTextField.topPos.equalTo(_headerColorTextField.bottomPos).offset(40.f);
+    _headerFontSizeTextField.topPos.equalTo(_headerColorTextField.bottomPos).offset(12.f);
     _headerFontSizeTextField.myLeft = 0;
     _headerFontSizeTextField.myWidth = 100.f;
     [self addSubview:_headerFontSizeTextField];
@@ -69,7 +69,7 @@
     [self addSubview:_contentFontSizeTextField];
 
     _updateButton.mySize = CGSizeMake(100.f, 50.f);
-    _updateButton.topPos.equalTo(_contentFontSizeTextField.bottomPos).offset(20.f);
+    _updateButton.topPos.equalTo(_contentFontSizeTextField.bottomPos).offset(12.f);
     _updateButton.myCenterX = 0;
     [self addSubview:_updateButton];
 }

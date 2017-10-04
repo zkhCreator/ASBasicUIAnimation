@@ -25,6 +25,7 @@
     ViewController *vc = [[ViewController alloc] init];
     vc.title = @"UI调试";
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    nav.extendedLayoutIncludesOpaqueBars = YES;
     
     _window.rootViewController = nav;
     [_window makeKeyAndVisible];
