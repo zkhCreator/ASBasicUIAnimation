@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MyLayout/MyLayout.h>
 
-@interface BBSBasicEditView : MyRelativeLayout
+@interface ASBasicEditView : MyRelativeLayout
 
 @property (nonatomic, strong) UITextField *headerText;
 @property (nonatomic, strong) UITextField *contentText;

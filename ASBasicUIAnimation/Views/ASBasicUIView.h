@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <MyLayout/MyLayout.h>
 
-@interface BBSBasicUIView : MyRelativeLayout
+@interface ASBasicUIView : MyRelativeLayout
 
-@property (nonatomic, strong) UIView *content;
+@property (nonatomic, strong) MyLinearLayout *content;
 @property (nonatomic, strong) UILabel *headerTextLabel;
 @property (nonatomic, strong) UILabel *contentTextLabel;
 

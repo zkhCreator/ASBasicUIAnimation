@@ -6,9 +6,9 @@
 //  Copyright © 2017 zkhCreator. All rights reserved.
 //
 
-#import "BBSBasicEditView.h"
+#import "ASBasicEditView.h"
 
-@implementation BBSBasicEditView
+@implementation ASBasicEditView
 
 - (instancetype)init {
     self = [super init];

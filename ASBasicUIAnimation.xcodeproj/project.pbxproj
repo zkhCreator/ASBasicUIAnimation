@@ -11,8 +11,8 @@
 		E81B7C5D1F78FF370046B089 /* ASBasicUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E81B7C5C1F78FF370046B089 /* ASBasicUIViewController.m */; };
 		E8227A181F84D61F002100C7 /* ASUIViewFontViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8227A171F84D61F002100C7 /* ASUIViewFontViewModel.m */; };
 		E8227A1B1F84D706002100C7 /* ASUIViewDemoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8227A1A1F84D706002100C7 /* ASUIViewDemoViewModel.m */; };
-		E85065521F7A4AC900A481E9 /* BBSBasicUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = E85065511F7A4AC900A481E9 /* BBSBasicUIView.m */; };
-		E85065551F7A503A00A481E9 /* BBSBasicEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = E85065541F7A503A00A481E9 /* BBSBasicEditView.m */; };
+		E85065521F7A4AC900A481E9 /* ASBasicUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = E85065511F7A4AC900A481E9 /* ASBasicUIView.m */; };
+		E85065551F7A503A00A481E9 /* ASBasicEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = E85065541F7A503A00A481E9 /* ASBasicEditView.m */; };
 		E8B029331F77C5050004A345 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B029321F77C5050004A345 /* AppDelegate.m */; };
 		E8B029361F77C5050004A345 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B029351F77C5050004A345 /* ViewController.m */; };
 		E8B0293B1F77C5050004A345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B0293A1F77C5050004A345 /* Assets.xcassets */; };
@@ -30,10 +30,10 @@
 		E8227A171F84D61F002100C7 /* ASUIViewFontViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASUIViewFontViewModel.m; sourceTree = "<group>"; };
 		E8227A191F84D706002100C7 /* ASUIViewDemoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASUIViewDemoViewModel.h; sourceTree = "<group>"; };
 		E8227A1A1F84D706002100C7 /* ASUIViewDemoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASUIViewDemoViewModel.m; sourceTree = "<group>"; };
-		E85065501F7A4AC900A481E9 /* BBSBasicUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBSBasicUIView.h; sourceTree = "<group>"; };
-		E85065511F7A4AC900A481E9 /* BBSBasicUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBSBasicUIView.m; sourceTree = "<group>"; };
-		E85065531F7A503A00A481E9 /* BBSBasicEditView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBSBasicEditView.h; sourceTree = "<group>"; };
-		E85065541F7A503A00A481E9 /* BBSBasicEditView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBSBasicEditView.m; sourceTree = "<group>"; };
+		E85065501F7A4AC900A481E9 /* ASBasicUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBasicUIView.h; sourceTree = "<group>"; };
+		E85065511F7A4AC900A481E9 /* ASBasicUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBasicUIView.m; sourceTree = "<group>"; };
+		E85065531F7A503A00A481E9 /* ASBasicEditView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBasicEditView.h; sourceTree = "<group>"; };
+		E85065541F7A503A00A481E9 /* ASBasicEditView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBasicEditView.m; sourceTree = "<group>"; };
 		E8B0292E1F77C5050004A345 /* ASBasicUIAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASBasicUIAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B029311F77C5050004A345 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E8B029321F77C5050004A345 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,10 +80,10 @@
 		E850654F1F7A4AAD00A481E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E85065501F7A4AC900A481E9 /* BBSBasicUIView.h */,
-				E85065511F7A4AC900A481E9 /* BBSBasicUIView.m */,
-				E85065531F7A503A00A481E9 /* BBSBasicEditView.h */,
-				E85065541F7A503A00A481E9 /* BBSBasicEditView.m */,
+				E85065501F7A4AC900A481E9 /* ASBasicUIView.h */,
+				E85065511F7A4AC900A481E9 /* ASBasicUIView.m */,
+				E85065531F7A503A00A481E9 /* ASBasicEditView.h */,
+				E85065541F7A503A00A481E9 /* ASBasicEditView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E85065551F7A503A00A481E9 /* BBSBasicEditView.m in Sources */,
+				E85065551F7A503A00A481E9 /* ASBasicEditView.m in Sources */,
 				E8227A181F84D61F002100C7 /* ASUIViewFontViewModel.m in Sources */,
 				E8B0294A1F77FAE50004A345 /* ASTableViewListViewModel.m in Sources */,
 				E8B029361F77C5050004A345 /* ViewController.m in Sources */,
@@ -287,7 +287,7 @@
 				E8B029331F77C5050004A345 /* AppDelegate.m in Sources */,
 				E8227A1B1F84D706002100C7 /* ASUIViewDemoViewModel.m in Sources */,
 				E81B7C5D1F78FF370046B089 /* ASBasicUIViewController.m in Sources */,
-				E85065521F7A4AC900A481E9 /* BBSBasicUIView.m in Sources */,
+				E85065521F7A4AC900A481E9 /* ASBasicUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

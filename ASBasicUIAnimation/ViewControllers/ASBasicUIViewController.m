@@ -8,14 +8,14 @@
 
 #import "ASBasicUIViewController.h"
 #import <MyLayout/MyLayout.h>
-#import "BBSBasicUIView.h"
-#import "BBSBasicEditView.h"
+#import "ASBasicUIView.h"
+#import "ASBasicEditView.h"
 
 @interface ASBasicUIViewController ()
 
 @property (nonatomic, strong) MyLinearLayout *contentLayout;
-@property (nonatomic, strong) BBSBasicUIView *showView;
-@property (nonatomic, strong) BBSBasicEditView *editView;
+@property (nonatomic, strong) ASBasicUIView *showView;
+@property (nonatomic, strong) ASBasicEditView *editView;
 
 
 @end
@@ -34,13 +34,12 @@
     _contentLayout.myMargin = 0;
     [self.view addSubview:_contentLayout];
     
-    _showView = [[BBSBasicUIView alloc] init];
-    _showView.backgroundColor = [UIColor redColor];
+    _showView = [[ASBasicUIView alloc] init];
     _showView.myLeft = _showView.myRight = _showView.myTop = 0;
     _showView.myHeight = 400.f;
     [_contentLayout addSubview:_showView];
     
-    _editView = [[BBSBasicEditView alloc] init];
+    _editView = [[ASBasicEditView alloc] init];
     _editView.myMargin = 30.f;
     [_contentLayout addSubview:_editView];
 }
